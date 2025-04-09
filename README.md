@@ -17,7 +17,7 @@ Download the validation set from the following link:
 
 After downloading, the dataset structure should look like this:
 
-${PROJECT_ROOT}$ -- val
+-- val
 -- road_anomaly ... -- segment_me ...
 
 
