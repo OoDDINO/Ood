@@ -1,31 +1,36 @@
 # OodDINO
 
-[state-of-the-art on RoadAnomaly Benchmark](https://paperswithcode.com/sota/anomaly-detection-on-road-anomaly)
+OodDINO is a state-of-the-art framework for anomaly detection on road anomaly datasets. It achieves top performance on both the [RoadAnomaly Benchmark](https://paperswithcode.com/sota/anomaly-detection-on-road-anomaly) and the [SegmentMeIfYouCan Benchmark](https://segmentmeifyoucan.com/leaderboard).
 
-[state-of-the-art on SegmentMeIfYouCan Benchmark](https://segmentmeifyoucan.com/leaderboard)
+## Framework Overview
+
+Our framework is built on top of [MMDetection](https://github.com/open-mmlab/mmdetection), a powerful open-source object detection toolbox. Please follow the [installation instructions](https://mmdetection.readthedocs.io/en/latest/install.html) to set up the environment.
 
 ## Datasets Preparation
 
-Download validation set [data set ](https://drive.google.com/file/d/1IbD_zl5MecMCEj6ozGh40FE5u-MaxPLh/view?usp=sharing) It should look like this: 
-```
+Before using the framework, you need to download and prepare the datasets. Here are the steps:
 
-${PROJECT_ROOT}
- -- val       
-     -- road_anomaly
-         ...
-     -- segment_me
-         ...
-```
-Download [train set](https://drive.google.com/file/d/1k25FpVP4pG3ER3eXsR-go_iprZMEdEae/view?usp=sharing).It should look like this: 
-```
- -- train_dataset
-     -- offline_dataset
-         ...
-     -- offline_dataset_score
-         ...
-     -- offline_dataset_score_view
-         ...
-     -- ood.json
-```
+### Validation Set
+
+Download the validation set from the following link:  
+[Validation Dataset](https://drive.google.com/file/d/1IbD_zl5MecMCEj6ozGh40FE5u-MaxPLh/view?usp=sharing)
+
+After downloading, the dataset structure should look like this:
+
+${PROJECT_ROOT} -- val
+-- road_anomaly ... -- segment_me ...
 
 
+
+### Training Set
+
+Download the training set from the following link:  
+[Training Dataset](https://drive.google.com/file/d/1k25FpVP4pG3ER3eXsR-go_iprZMEdEae/view?usp=sharing)
+
+The training dataset structure should look like this:
+
+-- train_dataset -- offline_dataset ... -- offline_dataset_score ... -- offline_dataset_score_view ... -- ood.json
+
+## Framework Details
+
+The framework utilizes uncertainty fusion layers. These layers can be found in the `layers` directory of the codebase. Please refer to the code for detailed implementation and usage of these layers.
