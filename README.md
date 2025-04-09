@@ -39,3 +39,12 @@ The framework utilizes uncertainty fusion layers. These layers can be found in t
 
 The baseline for our framework is provided by [RPL](https://github.com/yyliu01/RPL). Please follow the instructions below to install and set it up.
 
+
+### Pre-trained Weights
+
+You can download the pre-trained weights from the following link:  
+[Pre-trained Weights](https://drive.google.com/file/d/1osPT__BIqCYrBT0F-Dmi2IfbUSmuUZPd/view?usp=drive_link)
+
+Please place the downloaded weights in the appropriate directory as per the configuration files.
+
+
