@@ -47,4 +47,25 @@ You can download the pre-trained weights from the following link:
 
 Please place the downloaded weights in the appropriate directory as per the configuration files.
 
+Replace the threshold-net section with the RPL training code as follows:
+
+Locate the threshold-net section of your code and replace it with the relevant code from the RPL repository for training. You can follow the instructions in the RPL repository to adapt the training process.
+
+you can perform inference using the following command:
+
+Go to the RPL directory:
+
+cd /rpl_corocl.code
+
+Run the inference script:
+
+python test.py
+
+
+Acknowledgements
+This framework is based on MMDetection.
+
+The OodDINO framework has been evaluated on the RoadAnomaly and SegmentMeIfYouCan benchmarks.
+
+The baseline for this framework is provided by RPL.
 
