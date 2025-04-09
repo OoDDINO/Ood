@@ -34,3 +34,8 @@ The training dataset structure should look like this:
 ## Framework Details
 
 The framework utilizes uncertainty fusion layers. These layers can be found in the `layers` directory of the codebase. Please refer to the code for detailed implementation and usage of these layers.
+
+## Baseline
+
+The baseline for our framework is provided by [RPL](https://github.com/yyliu01/RPL). Please follow the instructions below to install and set it up.
+
