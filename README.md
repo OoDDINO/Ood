@@ -53,13 +53,16 @@ Locate the threshold-net section of your code and replace it with the relevant c
 
 you can perform inference using the following command:
 
-Go to the RPL directory:
+1. Go to the RPL directory:
 
-cd /rpl_corocl.code
+   ```
+   bash
+   cd /rpl_corocl.code
 
 Run the inference script:
 
 python test.py
+   ```
 
 
 Acknowledgements
